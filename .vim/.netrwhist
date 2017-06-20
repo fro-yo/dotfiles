@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/Ajeya/.vim'
+let g:netrw_dirhist_2='/Users/Ajeya'
+let g:netrw_dirhist_3='/Users/Ajeya/Documents'
+let g:netrw_dirhist_4='/Users/Ajeya/Stuff/Web/schedule/node_modules'
+let g:netrw_dirhist_5='/Users/Ajeya/Stuff/CSE12/hw8/.git'
+let g:netrw_dirhist_6='/Users/Ajeya/XcodeProjects/Calc/Calc'
+let g:netrw_dirhist_7='/Users/Ajeya/Stuff/Web/extensions/gadgetronbot/.git'
+let g:netrw_dirhist_8='/Users/Ajeya/.fzf'

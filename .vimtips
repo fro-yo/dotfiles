@@ -1,0 +1,8 @@
+cib -> change in bracket
+^c -> normal mode
+^r^w in commandmode -> pastes the word under the cursor
+* -> search for word under cursor
+^V -> visual block, select multiple lines, then  I<phrase> (note capital I) will insert before all lines / A<phrase> will insert after all lines
+      can also use to delete columns etc
+^wv -> vertically split current window (duplicates)
+
