@@ -5,7 +5,7 @@
 " load plugins from vundle
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let vundle manage vundle
@@ -25,6 +25,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mattn/emmet-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-obsession'
 
 call vundle#end()
 filetype plugin indent on
@@ -117,6 +118,12 @@ nnoremap tk  :tabprev<CR>
 nnoremap tl  :tablast<CR>
 nnoremap tt  :tabedit<Space>
 
+" split navigation  -> ctrl + hjkl
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 nnoremap <C> :<c>
 
 " helpers for dealing with other people's code
@@ -125,9 +132,6 @@ nmap \s :set ts=4 sts=4 sw=4 et<cr>
 
 "remapping emmet key
 let g:user_emmet_leader_key='<C-A>'
-
-"jk goes to normal mode
-map! jk <ESC>
 
 "Tagbar
 nnoremap qq :TagbarToggle<CR>
@@ -177,17 +181,3 @@ let &colorcolumn=join(range(81,81),",")
 set listchars=tab:--
 
 execute pathogen#infect()
-
-
-"Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode="passive"
-let g:syntastic_enable_signs=0
-nnoremap <C-w>E :SyntasticCheck<CR> :lopen<CR> 
