@@ -26,6 +26,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-obsession'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -83,7 +84,7 @@ let base16colorspace=256  " Access colors present in 256 colorspace"
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 set background=dark
 
-colorscheme gruvbox 
+colorscheme jellybeans
 
 set number
 
